@@ -1,65 +1,41 @@
-# autovariableal README
+# VS Code Extension: AutoVariable
 
-This is the README for your extension "autovariableal". After writing up a brief description, we recommend including the following sections.
+##  The AutoVariable extension is a Visual Studio Code (VS Code) extension aimed at improving your productivity when dealing with variable naming in your code.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- ## Variable Renaming:
+  
+- The extension allows you to automatically rename a variable according to the AL Object Type it represents. It helps in managing and standardizing your codebase.
+  
+- ## AL Object Type Identification:
+  
+- The extension supports multiple AL Object Types
+  These include `Record`, `Page`, `Report`, `Codeunit`, `XMLport`, `Query`, `Enum`, `DotNet`. The extension can identify these types in your code and act accordingly.
+  
+- ## In-line Editing:
+  
+- You don't have to worry about the extension taking you to a different window or panel for variable renaming. The AutoVariable extension performs all its tasks within your current editing window, respecting your flow of work.
 
-For example if there is an image subfolder under your extension project workspace:
+  
 
-\!\[feature X\]\(images/feature-x.png\)
+## Usage
+To use the AutoVariable extension, follow these steps:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+> Activate the extension by running the command extension.autoVariable in your VS Code instance.
 
-## Requirements
+> Once activated, the extension will automatically monitor your variable declarations. It identifies the AL Object Type and replaces the variable name with the name of the Type.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+> If you wish to deactivate the extension, simply run the deactivate command in your VS Code instance.
 
-## Extension Settings
+> The AutoVariable extension provides a simple yet effective way to manage and standardize your variable naming. Its real-time, in-place editing feature makes it a seamless addition to your development environment.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
 
-For example:
+# Disclaimer
+Please note that this extension only works with code files that follow the syntax used in the above code.
 
-This extension contributes the following settings:
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
 
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+## License
+MIT
+**Free Software**
