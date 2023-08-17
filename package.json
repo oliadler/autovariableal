@@ -15,7 +15,15 @@
     "commands": [{
       "command": "extension.autoVariable",
       "title": "Insert Variable"
-    }]
+    }],
+    "keybindings": [
+      {
+          "command": "extension.autoVariable",
+          "key": "shift+Alt+,",
+          "when": "editorTextFocus"
+      }
+  ]
+  
   },
   "scripts": {
     "lint": "eslint .",
