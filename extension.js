@@ -19,6 +19,7 @@ function activate(context) {
 			return;
 		}
 		
+		
 			const document = editor.document;
 		
 			let selection = editor.selection;
@@ -38,7 +39,7 @@ function activate(context) {
 					if (isHandled) {break;}
 					if (variableType.startsWith(alObjectTypes[i])) {
 						let typeName = variableType.substring(alObjectTypes.length).trim();
-						let variableName = typeName.replace(/[\s"]/g, ""); // g = global   
+						let variableName = typeName.replace(/[\s".-/&]/g, ""); // g = global   
 						
 						let startPosition = new vscode.Position(selection.start.line, 0);
 						let endPosition = new vscode.Position(selection.start.line, colonPosition);
